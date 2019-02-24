@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+
 {% block content %}
   <div>
     <h1>{{ employer['name'] }}</h1>
@@ -15,9 +16,9 @@
     <div class="box">
       <article class="media">
         <div class="media-left">
-          {% for _ in range(0, review['rating']) %}
+          {% for _ in range(0, review['rating']): %}
             <span class="fa fa-star checked"></span>
-          {% endfor % }
+          {% endfor %}
         </div>
         <div class="media-content">
           <div class="content">
